@@ -1,0 +1,96 @@
+.explore-menu{
+    display: flex;
+    flex-direction:column;
+    padding-top: 60px;
+    gap: 20px;
+}
+.explore-menu h1{
+    color: #262626;
+    font-weight: 500;
+}
+.explore-menu-text{
+    max-width: 100%;
+    color: #808080;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align:center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list-item img{
+    width: 7.5vw;
+    height: 7.5vw;
+    min-width: 80px;
+    min-height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+.explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.explore-menu-list-item .active{
+    border: 4px solid #B8860B;
+    padding: 2px;
+}
+@media(max-width:100px){
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
+/* Mobile ku thaniya space */
+@media (max-width: 750px) {
+    .explore-menu {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+    .explore-menu h1 {
+        font-size: 26px;
+    }
+    .explore-menu-text {
+        font-size: 14px;
+    }
+    /* Mobile la Table udayama irukka */
+
+    .list-table-format {
+        grid-template-columns: 0.6fr 2fr 1fr !important;
+        gap: 10px;
+        font-size: 13px;
+        padding: 10px 5px;
+    }
+    /* Category ah Mobile la maraichidu - space kedaikkum */
+    .list-table-format b:nth-child(3),
+    .list-table-format p:nth-child(3) {
+        display: none;
+    }
+    .list-table {
+        overflow-x: auto;
+    }
+    .list-table-format img {
+        width: 40px !important;
+    }
+}
