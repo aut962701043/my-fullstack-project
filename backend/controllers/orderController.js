@@ -7,7 +7,7 @@ import Stripe from "stripe"
 
 //placing user order for frontend
 const placeOrder = async (req,res) =>{
-    const frontend_url = "http://localhost:5174";
+    const frontend_url = "https://food-palace-q7g4.onrender.com";
 
     try {
         console.log("Payment Method :",req.body.paymentMethod);
