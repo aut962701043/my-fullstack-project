@@ -6,6 +6,7 @@ import userRouter from "./routes/userRoute.js"
 import cartRouter from "./routes/cartRoute.js"
 import 'dotenv/config'
 import orderRouter from "./routes/orderRoute.js"
+import mongoose from "mongoose"
 
 
 
@@ -35,4 +36,4 @@ app.listen(port,()=>{
     console.log(`Server Started on http://localhost:${port}`)
 })
 
-//mongodb+srv://Thiru:Sr7myYy55RuMo3Nr@cluster0.w9gbo4j.mongodb.net/
+//mongodb+srv://mthirumal2005_db_user:UIpuXMmY8eoQ9Kz9@cluster0.i02zvqc.mongodb.net/
